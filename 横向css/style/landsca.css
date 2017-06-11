@@ -1,0 +1,39 @@
+.container{
+	display: flex;
+}
+ul,ul a,li,li a{
+    text-decoration: none;
+    list-style: none;
+    color: #000;
+    font-size: 12px;
+}
+.main1{
+	display: block;
+	border:1px solid #ddd;
+	width: 50px;//各位可以根据需要修改宽度
+	height: 28px;
+	text-align: center;
+	line-height: 28px;
+}
+.content{
+margin-top: 1px;
+position: absolute;/*设置绝对定位，宽度为内容宽带*/
+left: -999px;/*隐藏掉菜单内容*/
+padding: 0;
+}
+.main:hover ul{
+		left: auto;/*设置位于上级标签的正下方*/
+	}
+.inner{
+	display: inline-block;
+	border: 1px solid #ddd;/*border-bottom会叠加*/
+	height: 30px;
+	padding: 0 10px;
+	line-height: 30px;
+}
+.inner:hover{
+background-color: #ddd;
+	}
+	.main{
+		display: inline-block;/*设置上级标签为inline-block，默认宽度=内容宽度，鼠标hover才会展开菜单*/
+	}
